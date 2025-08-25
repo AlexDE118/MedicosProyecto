@@ -17,5 +17,4 @@ public class Application {
         window.setContentPane(view.getPanel());
         window.setVisible(true);
     }
-    }
 }

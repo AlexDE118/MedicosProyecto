@@ -7,14 +7,14 @@ public class Medico {
     private String especialidad;
     private String clave;
     //Constructores
-    Medico(){
+    public Medico(){
         this.ID = "";
         this.nombre = "";
         this.especialidad = "";
         this.clave = "123";
     }
 
-    Medico(String ID, String nombre, String especialidad, String clave){
+    public Medico(String ID, String nombre, String especialidad, String clave){
         this.ID = ID;
         this.nombre = nombre;
         this.especialidad = especialidad;

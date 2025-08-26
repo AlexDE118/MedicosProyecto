@@ -1,5 +1,5 @@
-package java.medicos.data;
-import java.medicos.logic.Medico;
+package hospital.medicos.data;
+import hospital.medicos.logic.Medico;
 import java.util.ArrayList;
 import java.util.List;
 

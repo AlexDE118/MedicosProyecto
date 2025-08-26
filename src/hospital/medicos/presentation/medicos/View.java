@@ -1,4 +1,4 @@
-package java.medicos.presentation.medicos;
+package hospital.medicos.presentation.medicos;
 
 import javax.swing.*;
 

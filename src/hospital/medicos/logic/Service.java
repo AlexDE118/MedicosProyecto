@@ -1,6 +1,6 @@
-package java.medicos.logic;
+package hospital.medicos.logic;
 
-import  java.medicos.data.Data;
+import hospital.medicos.data.Data;
 
 public class Service {
     private static Service theInstance;

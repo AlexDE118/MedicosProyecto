@@ -1,7 +1,7 @@
-package java.medicos;
+package hospital.medicos;
 
 import javax.swing.*;
-import java.medicos.presentation.medicos.View;
+import hospital.medicos.presentation.medicos.View;
 
 public class Application {
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package java.medicos.presentation;
+package hospital.medicos.presentation;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;

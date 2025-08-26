@@ -1,4 +1,4 @@
-package java.medicos.logic;
+package hospital.medicos.logic;
 
 public class Medico {
     //Atributos

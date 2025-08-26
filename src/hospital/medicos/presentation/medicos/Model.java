@@ -1,7 +1,7 @@
-package java.medicos.presentation.medicos;
+package hospital.medicos.presentation.medicos;
 
-import java.medicos.logic.Medico;
-import java.medicos.presentation.AbstractModel;
+import hospital.medicos.logic.Medico;
+import hospital.medicos.presentation.AbstractModel;
 
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;

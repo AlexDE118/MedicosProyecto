@@ -2,6 +2,8 @@ package hospital.medicos.logic;
 
 import hospital.medicos.data.Data;
 
+import java.util.List;
+
 public class Service {
     private static Service theInstance;
     private Data data;
@@ -26,6 +28,10 @@ public class Service {
         }else{
             throw new Exception("Medico ya existe");
         }
+    }
+
+    public List<Medico> loadMedicos() {
+            return data.getListaMedicos();
     }
 
     public Medico readMedico(Medico e) throws Exception {

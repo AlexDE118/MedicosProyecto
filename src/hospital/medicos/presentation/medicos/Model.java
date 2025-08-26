@@ -13,6 +13,7 @@ public class Model extends AbstractModel {
     int anterior;
 
     public static final String CURRENT = "Current";
+    public static final String LISTAMEDICOS = "Medicos";
 
     public Model() {
         current = new Medico("111","Alex Dittel","Trauma","1234");
@@ -23,6 +24,7 @@ public class Model extends AbstractModel {
     public void addPropertyChangeListener(PropertyChangeListener listener){
         super.addPropertyChangeListener(listener);
         firePropertyChange(CURRENT);
+        firePropertyChange(LISTAMEDICOS);
     }
 
     public Medico getMedico() {
@@ -31,5 +33,21 @@ public class Model extends AbstractModel {
 
     public void setMedico(Medico medico) {
         this.current = medico;
+        firePropertyChange(CURRENT);
     }
+
+    public List<Medico> getMedicos() {
+        return medicos;
+    }
+
+    public void setMedicos(List<Medico> medicos) {
+        this.medicos = medicos;
+        firePropertyChange(LISTAMEDICOS);
+    }
+
+    public void addMedico(Medico medico){
+        medicos.add(medico);
+        firePropertyChange(CURRENT);
+    }
+
 }

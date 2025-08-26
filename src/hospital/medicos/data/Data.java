@@ -8,6 +8,8 @@ public class Data {
 
     public Data() {
         this.listaMedicos = new ArrayList<Medico>();
+        listaMedicos.add(new Medico("222", "Amelia Crowe", "Dermatologia","3333"));
+        listaMedicos.add(new Medico("333", "Maddison Bell", "Pediatria","4444"));
     }
 
     public List<Medico> getListaMedicos() {

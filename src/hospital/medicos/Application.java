@@ -13,9 +13,9 @@ public class Application {
         Model model = new Model();
         View view = new View();
         Controller controller = new Controller(view, model);
-
+        controller.loadMedicos();
         JFrame window = new JFrame();
-        window.setSize(600,300);
+        window.setSize(600,400);
         window.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         window.setTitle("Personas");
         window.setContentPane(view.getPanel());

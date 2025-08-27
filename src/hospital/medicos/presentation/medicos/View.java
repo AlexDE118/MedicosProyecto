@@ -25,6 +25,7 @@ public class View implements PropertyChangeListener {
     private JTable table_medicos;
     private JButton guardarButton;
     private JButton cargarButton;
+    private JTabbedPane tabbedPane1;
 
     public View(){
         guardarButton.addActionListener(new ActionListener() {
@@ -38,6 +39,7 @@ public class View implements PropertyChangeListener {
                 try{
                     controller.createMedico(medico);
                     JOptionPane.showMessageDialog(null, "Medico creado con exito");
+                    controller.loadMedicos();
                 } catch(Exception ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage());
                 }
